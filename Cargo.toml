@@ -1,0 +1,11 @@
+[package]
+name = "amortization"
+version = "0.1.0"
+authors = ["T. Jameson Little <t.jameson.little@gmail.com>"]
+
+[dependencies]
+clap = "2.6.0"
+log = "0.3"
+env_logger = "0.3"
+rusqlite = "0.7.3"
+time = "0.1.35"
