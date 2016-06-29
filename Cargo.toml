@@ -9,3 +9,20 @@ log = "0.3"
 env_logger = "0.3"
 rusqlite = "0.7.3"
 time = "0.1.35"
+
+[lib]
+name = "amortization"
+path = "src/lib.rs"
+
+[[bin]]
+name = "amort-cli"
+path = "src/cli.rs"
+
+[[bin]]
+name = "amort-gtk"
+path = "src/gtk.rs"
+
+[dependencies.gtk]
+version = "0.1.0"
+# version shipped with current stable Debian
+features = ["v3_14"]
